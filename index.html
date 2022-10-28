@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creation gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8cf3ec664d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </label>
+                
+            </nav>
+            <div class="header-text">
+                <h4>Hello</h4>
+                <h1>I'm <span>Sachin G</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+<!------------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a freelancer. I can provide good-quality artwork. I make graphite and charcoal drawing and I also make watercolor and acrylic color paintings. Now I completed more than 4 years of experience in this field and I participated in several competitions and I won some prestigious prizes also. If you want any kind of services related to art you can free to ask.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphite drawing</span><br>Advance level </li>
+                            <li><span>Charchol drawing</span><br>Advance level </li>
+                            <li><span>acrylic colour painting</span><br>Advance level </li>
+                            <li><span>Water colour painting</span><br>Intermediate level </li>                     
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>Graphite drawing</span><br>More than 4 years of experience  </li>
+                            <li><span>Charchol drawing</span><br>More than 3 years of experience </li>
+                            <li><span>acrylic colour painting</span><br>2-3 years of experience </li>
+                            <li><span>Water colour painting</span><br>2-3 years of experience </li>                     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------my survices--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>Graphite / Charcoal</h2>
+                <p>Normal portrait drawing with graphite and charcoal pencil in your selected size paper.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-palette"></i>
+                <h2>Water colour / acrylic colour</h2>
+                <p>Making your reference on paper or on canvas with water colour and acrylic colour.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>Buy my masterpeice </h2>
+                <p>You can buy my high quality drawing print with different size </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="image/graphite.jpg">
+                <div class="layer">
+                    <h3>Graphite / Charcoal</h3>
+                    <p>You can see all my graphite and charcoal drawing here.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/watercolor.jpg">
+                <div class="layer">
+                    <h3>Water colour / acrylic colour</h3>
+                    <p>You can see all my watercolour and acrylic drawing here.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/other.jpg">
+                <div class="layer">
+                    <h3>Other art and craft</h3>
+                    <p>You can see all my mandala art, glass painting and craft here.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i>sachinkgond@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>1234567890</p>
+                <div class="sociail-tag">
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+                <a href="" download class="download">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="message"  rows="6" placeholder="message"></textarea>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-50%";
+    }
+</script>
+</body>
+</html>
